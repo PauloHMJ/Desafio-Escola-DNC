@@ -1,31 +1,25 @@
-# Desafio-Escola-DNC
+# Desafio 1 - Resolução
+
+- Link do site disponibilizado: https://projeto-escola-dnc.netlify.app/
+
+- Link da Planilha de registro de informações: https://docs.google.com/spreadsheets/d/11JZbxYYlyq52AD2bk8W7eZfGZtkHlxz9AWC2KOI-JS4/edit?usp=sharing
 
 
-## Código HTML
 
-O código HTML representa uma página de destino para uma empresa de arquitetura. Ele inclui seções para um cabeçalho, menu e informações, uma seção de imagem e uma seção de formulário.
 
-### Utilização
+## Arquivo HTML
 
-Para utilizar o código HTML, siga estes passos:
-1. Crie um novo arquivo HTML ou abra um existente.
-2. Copie todo o código HTML e cole no arquivo.
-3. Salve o arquivo com a extensão `.html`.
-4. Personalize o conteúdo dentro das tags HTML conforme necessário.
-5. Se necessário, vincule arquivos CSS e JavaScript externos.
+O arquivo HTML é uma página de destino (landing page) para um site de arquitetura. Ele contém os seguintes elementos principais:
 
-## Código JavaScript
+- Um cabeçalho com o título e descrição da empresa de arquitetura.
+- Uma seção de informações com estatísticas sobre os empreendimentos construídos, anos de mercado e experiência, e metros quadrados em projetos construídos.
+- Uma seção com uma imagem e texto destacando a história e experiência dos arquitetos.
+- Uma seção de formulário para os visitantes entrarem em contato e conhecerem mais sobre os serviços oferecidos.
 
-O código JavaScript define uma função chamada `Mensagem`.
+O formulário utiliza o método POST para enviar os dados para uma API externa (`https://api.sheetmonkey.io/form/4w2NbCQXnEdgHqju837Z2w`). Ele contém campos para o nome e e-mail do usuário, bem como um campo oculto para registrar a data e hora de envio do formulário.
 
-### Utilização
+## Arquivo JavaScript
 
-Para utilizar o código JavaScript, siga estas etapas:
-1. Adicione o trecho de código JavaScript a um arquivo JavaScript existente ou crie um novo arquivo com a extensão `.js`.
-2. Referencie o arquivo JavaScript no seu arquivo HTML, adicionando uma tag `<script>` no final do `<body>` ou no `<head>`, como no exemplo abaixo:
+O arquivo JavaScript (`index.js`) está vinculado ao arquivo HTML e adiciona funcionalidade ao formulário de contato. Ele contém uma função chamada `Verificar()` que é executada quando o botão "Fale Conosco" é clicado.
 
-```html
-<script src="caminho/do/arquivo.js"></script>
-```
-
-3. Você pode chamar a função `Mensagem()` em resposta a um evento específico, como o envio do formulário, por exemplo.
+Essa função realiza a verificação dos campos de entrada do formulário. Se o campo de nome ou e-mail estiver vazio, a função não faz nada. Caso contrário, exibe uma mensagem de alerta ao usuário, informando que o formulário foi enviado com sucesso.
