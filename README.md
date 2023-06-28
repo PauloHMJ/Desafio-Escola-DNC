@@ -1,6 +1,6 @@
 # Desafio 1 - Resolução
 
-- Link do site disponibilizado: https://projeto-escola-dnc.netlify.app/
+- Link do site disponibilizado: https://desafio-escola-dnc.netlify.app/
 
 - Link da Planilha de registro de informações: https://docs.google.com/spreadsheets/d/11JZbxYYlyq52AD2bk8W7eZfGZtkHlxz9AWC2KOI-JS4/edit?usp=sharing
 
